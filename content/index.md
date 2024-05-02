@@ -11,7 +11,8 @@ template: page
 
 # Game Ideas
 
-- ## [The Curse of Capitalism](/curse-of-capitalism/)
+- ### Game Poems
+    - [The Curse of Capitalism](/curse-of-capitalism/)
 
 :::
 

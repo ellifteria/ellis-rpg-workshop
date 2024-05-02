@@ -7,12 +7,6 @@ template: page
 
 # The Curse of Capitalism
 
-:::{.sidenote}
-
-A simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 Artificial Intelligence and Experimental Narrative.
-
-:::
-
 :::{.dropcap}
 
 Welcome to the **Cursed Bazaar**!
@@ -142,5 +136,37 @@ In other words, play returns to step (4).
 - **Laser sword**—a generic and non-copyright-infringing weapon.
 - **Neural implants**—like Neuralink but actually good.
 - **Bionic arms**—in case you, you know, lose an arm or something, not like that would ever happen or anything…
+
+:::
+
+:::{.page}
+
+## Credits
+
+:::{.sidenote}
+
+**The Curse of Capitalism**, a simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 Artificial Intelligence and Experimental Narrative.
+
+:::
+
+#### Game Concept By
+
+Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky
+
+#### Rules Formulated By
+
+Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky
+
+#### Playtested By
+
+Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky
+
+#### Final Rules Written By
+
+Elli Beres
+
+#### Final Formatting By
+
+Elli Beres
 
 :::
