@@ -1,0 +1,175 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/styles/a4.css" type="text/css" />
+
+        
+
+<title>Elli&#39;s Workshop | The Curse of Capitalism</title>
+
+ 
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+
+    </head>
+
+    <script>
+        function addBackLink() {
+            let pages = document.getElementsByClassName("page");
+            for (const page of pages) {
+                let backLink = document.createElement("a");
+                backLink.innerHTML = "← Back";
+                backLink.setAttribute("href", "javascript:history.back()");
+                backLink.setAttribute("class", "backlink");
+                page.prepend(backLink);
+            }
+        }
+    </script>
+
+    <body onload="addBackLink()">
+         <div data-fence="0" class="page">
+<h1 id="the-curse-of-capitalism">The Curse of Capitalism</h1>
+<div data-fence="1" class="sidenote">
+<p>A simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 Artificial Intelligence and Experimental Narrative.</p>
+</div>
+<div data-fence="1" class="dropcap">
+<p>Welcome to the <strong>Cursed Bazaar</strong>!
+Here, you are all <strong>merchants</strong>, either <strong>sellers</strong> or <strong>buyers</strong>.
+<strong>Sellers</strong> find themselves cursed to sell, sell, sell—their entire lives dedicated to amassing wealth by pawning their wares off to unaware customers—perhaps by exaggerating just a bit on the quality of their goods.
+<strong>Buyers</strong> are those unfortunate customers, addicted to acquiring more and more goods; buying things is all that brings their life joy by this point.</p>
+<p>You—my dear, sad friend—have found yourself unlucky enough to land you a spot here in the <strong>Cursed Bazaar</strong>.
+For you, there is no choice but to buy and sell and buy and sell in an endless cycle.
+This is the <strong>Curse of Capitalism</strong>.</p>
+</div>
+<h2 id="player-roles">Player Roles</h2>
+<h3 id="seller">Seller</h3>
+<p>Each <strong>seller</strong> has 3 items they sell.
+Upon becoming a <strong>seller</strong>, they chose these from the themed list chosen for the game or may come up with their own items closely related to that theme.
+One of the 3 items is <strong>cursed</strong>; the <strong>seller</strong> chooses which of their 3 items is the <strong>cursed item</strong>.
+The <strong>seller's</strong> goal is to sell this <strong>cursed</strong> item.
+Selling any <strong>cursed item</strong> to a <strong>buyer</strong> immediately frees the <strong>seller</strong>, transforming them into a <strong>buyer</strong> and turning the unfortunate <strong>buyer</strong> to whom they sold a <strong>cursed item</strong> into a <strong>seller</strong>.</p>
+<p>If a <strong>seller</strong> remains a <strong>seller</strong> after 3 <strong>interactions</strong>—i.e., if the <strong>seller</strong> is unable to sell a <strong>cursed item</strong> to a <strong>buyer</strong> 3 times in a row—a second of the <strong>seller’s</strong> 3 items becomes a <strong>cursed item</strong>.
+In other words, the <strong>seller</strong> has 2 <strong>cursed items</strong> and one regular item.
+If a <strong>seller</strong> remains a <strong>seller</strong> after 3 more <strong>interactions</strong>—so after a total of 6 <strong>interactions</strong>—all 3 of the <strong>seller's</strong> items become <strong>cursed items</strong>.</p>
+<h3 id="buyer">Buyer</h3>
+<p>Each <strong>buyer</strong> is addicted to purchasing goods and must travel from <strong>seller</strong> to <strong>seller</strong> buying as much as they can, trying to avoid obtaining a <strong>cursed item</strong> that will turn them into a <strong>seller</strong>.
+If a <strong>buyer</strong> at any time purchases any <strong>cursed item</strong>, they immediately switch places with the <strong>seller</strong> who sold them said item, becoming a new <strong>seller</strong> and turning said <strong>seller</strong> into a <strong>buyer</strong>.
+Upon becoming a <strong>seller</strong>, the former <strong>buyer</strong> chooses 3 items from the themed list or items of their choice related to the theme to sell and chooses one of the 3 to be their <strong>cursed item</strong>.</p>
+</div>
+<div data-fence="1" class="page">
+<h2 id="game-play">Game Play</h2>
+<ol>
+<li>A theme is chosen from one of the themed lists, or of the players' choice.</li>
+<li>All players are <strong>merchants</strong>, half are <strong>sellers</strong> and half are <strong>buyers</strong>.
+To start the game, the <strong>merchants</strong> divide themselves evenly in half.
+For games with more than approximately 30 players, this can be done with a 1d6 roll—all even rolls become <strong>sellers</strong> and all odd rolls become <strong>buyers</strong>.</li>
+<li><strong>Sellers</strong> choose their 3 items as described above and then disperse along the edges of the room to set up their stands.</li>
+<li>Each <strong>buyer</strong> approaches and <strong>interacts</strong> with a <strong>seller</strong> who does not already have a <strong>buyer</strong> <strong>interacting</strong> with them.</li>
+<li>The <strong>seller</strong> begins by describing each of their items—perhaps not entirely truthfully—with the hopes of convincing the <strong>buyer</strong> that they should buy an item off of them.</li>
+<li>The <strong>buyer</strong> then chooses one of those items that they would like to buy.
+They describe that item, what they intend to use it for, and what they are specifically looking for in such an item.</li>
+<li>The <strong>seller</strong> then describes why their item is perfect for the <strong>buyer</strong> and why the <strong>buyer</strong> will be pleased with their purchase.</li>
+<li>The <strong>seller</strong> and <strong>buyer</strong> then each roll 2d6.
+<ul>
+<li>If the <strong>seller</strong> rolls a higher total sum than the <strong>buyer</strong>, the <strong>buyer</strong> purchases the item.
+If the item the <strong>buyer</strong> purchased is a <strong>cursed item</strong>, the roles swap as described above.</li>
+<li>If the <strong>buyer</strong> rolls a higher total sum than the <strong>seller</strong>, the <strong>buyer</strong> does not purchase the item.</li>
+<li>If the <strong>buyer</strong> and <strong>seller</strong> tie, the highest individual d6 in the rolls wins.
+If it is still tied at this point, both the <strong>buyer</strong> and <strong>seller</strong> reroll 1d6 and the highest die wins.
+If it is still tied, the <strong>buyer</strong> purchases a <strong>cursed item</strong> off of the <strong>seller</strong> of the <strong>seller's</strong> choice, regardless of the original item being purchased.</li>
+</ul>
+</li>
+<li>The <strong>seller</strong> and the <strong>buyer</strong> roleplay the result of their <strong>interaction</strong>, describing why the item was bought or not bought and any consequences therefore.</li>
+<li>Whoever is the <strong>buyer</strong> after the <strong>interaction</strong> goes off to find another <strong>seller</strong> to purchase goods off of and whoever is the <strong>seller</strong> after the <strong>interaction</strong> stays at the stand, waiting for another <strong>buyer</strong> to approach.
+In other words, play returns to step (4).</li>
+<li>This loop continues for approximately 15 minutes, or until all <strong>merchants</strong> want the game to end.</li>
+<li>Once the game has ended, the <strong>merchants</strong> all describe the items they bought and sold to the other <strong>merchants</strong> around them.</li>
+</ol>
+</div>
+<div data-fence="1" class="page">
+<h2 id="item-lists">Item Lists</h2>
+<h3 id="silk-road-themed-item-list">Silk Road Themed Item List</h3>
+<ul>
+<li><strong>Silk</strong>—so your clothes can make you feel like a foreign princess.</li>
+<li><strong>Spices</strong>—so your cooking doesn’t taste too rotten.</li>
+<li><strong>Camels</strong>—so you can be lazy and not carry everything by hand.</li>
+<li><strong>Elephants</strong>—so you can be even lazier and carry even less by hand!</li>
+<li><strong>Rugs</strong>—to keep your feet warm on cold, lonely winter nights.</li>
+<li><strong>Tapestries</strong>—your room looks drab and bland; you need one, trust me.</li>
+<li><strong>Scimitars</strong>—&quot;an elegant weapon for a more civilized age.”</li>
+<li><strong>Horses</strong>—you walk places??? What are you, poor?</li>
+<li><strong>Paper</strong>—so you can write down all your definitely-not-terrible ideas.</li>
+<li><strong>Jade</strong>—the name means &quot;loin stone,&quot; buy it.</li>
+<li><strong>Glassware</strong>—for all those fancy parties you definitely throw with all your friends that definitely exist and just go to a different school.</li>
+<li><strong>Furs</strong>—so you can keep yourself warm on cold, lonely winter nights.</li>
+<li><strong>Frankincense</strong>—nope, I'm not making a joke about Jesus here.</li>
+<li><strong>Saffron</strong>—worth more than its weight in gold.</li>
+<li><strong>Dates</strong>—the fruit, even I can't help you with the other kind.</li>
+</ul>
+</div>
+<div data-fence="1" class="page">
+<h3 id="fantasy-themed-item-list">Fantasy Themed Item List</h3>
+<ul>
+<li><strong>The Two Rings</strong>—so the Dark Lord can spy on you and a friend.</li>
+<li><strong>Magic wands</strong>—so you can shoot yourself in the foot… with magic.</li>
+<li><strong>Love potions</strong>—don’t question the ethics of this one.</li>
+<li><strong>Witch’s cauldron</strong>—for brewing definitely-not-illicit substances.</li>
+<li><strong>Magic amulet</strong>—in case something interesting ever happens to you.</li>
+<li><strong>Enchanted armor</strong>—if you ever find yourself in combat, it's too late for you.</li>
+<li><strong>Crystal ball</strong>—please don't use this for anything weird.</li>
+<li><strong>Invisibility cloak</strong>—if I were you, I'd want to hide forever too.</li>
+<li><strong>Spell book</strong>—requires a third-grade reading level; so probably too advanced for you.</li>
+<li><strong>Hammer of Thunder</strong>—try pronouncing Mjǫllnir and you'll understand why we went with this name.</li>
+<li><strong>Necronomicon</strong>—I doubt any ancient demon would bother listening to you.</li>
+<li><strong>Throne of Darkness</strong>—a 100% totally not uncomfortable chair we promise.</li>
+<li><strong>Magic cat</strong>—so it can scratch you then teleport away.</li>
+<li><strong>Portal staff</strong>—in case you're in need of a quick getaway.</li>
+<li><strong>Unicorn horns</strong>—no unicorns were harmed in the making of this product... probably.</li>
+</ul>
+</div>
+<div data-fence="1" class="page">
+<h3 id="science-fiction-themed-item-list">Science Fiction Themed Item List</h3>
+<ul>
+<li><strong>Laser weapons</strong>—pew pew pew.</li>
+<li><strong>Bow Tie Fighters</strong>—so you can zip around space in style.</li>
+<li><strong>Atom knife</strong>—so you can slice thinner than a strand of hair.</li>
+<li><strong>Blue milk</strong>—you’re probably disgusting enough to buy this.</li>
+<li><strong>Warp drive</strong>—hit it!</li>
+<li><strong>Hologram communicator</strong>—like a phone but worse in every way.</li>
+<li><strong>Teleporter</strong>—please, buy this one and get as far away from me as possible as quickly as possible.</li>
+<li><strong>Time machine</strong>—so you can go back in time and change your mind about this poor financial decision.</li>
+<li><strong>Flux capacitor</strong>—*engage technobabble nonsense.*</li>
+<li><strong>Kublicane</strong>—sci-fi drugs.</li>
+<li><strong>Spice melange</strong>—sci-fi drugs part 2 electric boogaloo.</li>
+<li><strong>Hoverbike</strong>—I know you're lazy, you don't have to try and hide it.</li>
+<li><strong>Laser sword</strong>—a generic and non-copyright-infringing weapon.</li>
+<li><strong>Neural implants</strong>—like Neuralink but actually good.</li>
+<li><strong>Bionic arms</strong>—in case you, you know, lose an arm or something, not like that would ever happen or anything…</li>
+</ul>
+</div>
+ 
+    </body>
+</html>
+  
