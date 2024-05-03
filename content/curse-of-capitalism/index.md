@@ -145,7 +145,7 @@ In other words, play returns to step (4).
 
 :::{.sidenote}
 
-**The Curse of Capitalism**, a simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 Artificial Intelligence and Experimental Narrative.
+**The Curse of Capitalism**, a simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 AI and Experimental Narrative.
 
 :::
 
@@ -168,5 +168,9 @@ Elli Beres
 #### Final Formatting By
 
 Elli Beres
+
+#### Game Created For
+
+Dr. Ian Horswill's Spring 2024 COMP_SCI 396: AI and Experimental Narrative at Northwestern University
 
 :::
