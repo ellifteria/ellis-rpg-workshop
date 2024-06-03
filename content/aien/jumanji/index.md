@@ -326,6 +326,10 @@ Elli Beres -->
 
 Elli Beres
 
+#### Personalities and Mannerisms Random Tables Adapted From
+
+[Maze Rats](https://questingbeast.itch.io/maze-rats)
+
 #### Game Created For
 
 Dr. Ian Horswill's Spring 2024 COMP_SCI 396: AI and Experimental Narrative at Northwestern University
