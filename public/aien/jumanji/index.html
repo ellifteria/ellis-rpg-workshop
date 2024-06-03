@@ -1,0 +1,502 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/styles/a4.css" type="text/css" />
+
+        
+
+<title>Elli&#39;s Workshop | Escape the Jungle</title>
+
+ 
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+
+    </head>
+
+    <script>
+        var addBackLink = function () {
+            let pages = document.getElementsByClassName("page");
+            for (const page of pages) {
+                let backLink = document.createElement("a");
+                backLink.innerHTML = "← Back";
+                backLink.setAttribute("href", "javascript:history.back()");
+                backLink.setAttribute("class", "backlink");
+                page.prepend(backLink);
+            }
+        };
+
+        var switchColor = function (newColor) {
+            let colorSwitcher = document.getElementById("colorSwitcher");
+
+            let newColorCSSVar = "";
+
+            switch (newColor) {
+                case "red":
+                case "blue":
+                case "green":
+                case "purple":
+                    newColorCSSVar = `var(--title-${newColor})`;
+                    break;
+                default:
+                    newColorCSSVar = `${newColor}`;
+                    break;
+            }
+
+            if (newColorCSSVar != "") {
+                colorSwitcher.innerHTML = `
+                :root {
+                    --title-color: ${newColorCSSVar};
+                }`;
+            }
+        };
+    </script>
+
+    <style id="colorSwitcher"></style>
+
+    <body onload="addBackLink();">
+         <script>
+    switchColor("#177245");
+</script>
+<div data-fence="0" class="page">
+<h1 id="escape-the-jungle">Escape the Jungle</h1>
+<div data-fence="1" class="dropcap">
+<p>Welcome to the <strong>the Jungle</strong>!
+You and your companions have found yourselves magically teleported to a mysterious, treacherous jungle and it is up to you to escape.
+There is a path leading before you out of the jungle—but the journey will not be an easy one.
+Along your path, you and your companions will be met with three <strong>challenges</strong>.
+Beat them, and you will successfully <strong>escape the jungle</strong>!</p>
+</div>
+<h2 id="materials">Materials</h2>
+<p><strong>Escape the Jungle</strong> is a game for 4-8 players.
+Each player will need one six-sided dice (1d6).
+The players will collectively need one copy of the <strong>Difficulty Tables</strong> and the <strong>Explorer Creation Tables</strong>—both are included later.</p>
+<h2 id="gameplay">Gameplay</h2>
+<p><strong>Escape the Jungle</strong> is played by a <strong>group</strong> of 4–8 <strong>explorers</strong>.
+Each <strong>game</strong> consists of 3 <strong>rounds</strong>, each of which consists of a single <strong>challenge</strong>.
+Each <strong>challenge</strong> consists of 2 dice rolls</p>
+<div data-fence="1" class="sidenote">
+<p>For longer or shorter games, the number of <strong>rounds</strong> per <strong>game</strong> and the number of <strong>challenges</strong> per <strong>round</strong> can both be changed at the players' discretion.</p>
+</div>
+<p>In each <strong>round</strong>, <strong>explorers</strong> each roll 1d6 to determine what <strong>challenge</strong> they will face that <strong>round</strong>.
+Then, one <strong>explorer</strong>—the <strong>explorer</strong> who rolled highest—decides on and narrates a <strong>plan</strong> how the <strong>group</strong> will attempt to succeed at the <strong>challenge</strong>.
+All other <strong>explorers</strong> are able to describe how they will assist the <strong>group</strong> in executing the <strong>plan</strong> if they so choose.</p>
+<p>Then, <strong>explorers</strong> all each roll another 1d6 to determine if they succeed.
+If the <strong>group</strong> succeeds, the <strong>explorer</strong> who rolled highest narrates how the group successfully executed the <strong>plan</strong>; if the group fails, the <strong>explorer</strong> who rolled lowest narrates how the <strong>plan</strong> failed.
+The <strong>game</strong> continues like this until 3 such <strong>rounds</strong> are played.</p>
+<p>After 3 rounds, congratulations!
+Your <strong>group</strong> of mighty <strong>explorers</strong> has managed to successfully <strong>escape the jungle</strong>!
+Take caution, however, for the <strong>jungle</strong>'s magic may draw you back in at any time.</p>
+<!-- 
+There is a path through a forest to find the missing treasure. There are many perilous traps and obstacles. At each hurdle the team has to collectively roll, and add up the result, find the % 12 score, and determine the obstacle from the 2nd table below.
+
+Highest roll describes how the group goes against a challenge.
+
+Roll again, if cumulative total is greater than Base Difficulty + Difficulty Modifier: success, otherwise, failure.
+
+Success -> next highest roll describes how goes right.
+Failure -> lowest roll describes how fails.
+
+Ultimate goal is to win all levels that the GM makes (probably 6 ish scenarios) to make it to the treasure
+
+Base difficulty for N number of players (cumulative dice roll):
+
+Game play is broken into three rounds of two rolls.
+
+The first roll is the challenge roll, it decides what challenge the group goes up against.
+The explorer who rolled highest in the challenge roll describes how the group will go up against the challenge.
+
+The second roll is the contest roll, it decides if the group beats the challenge.
+If the explorers pass the challenge, the explorer who rolled highest in the contest roll describes how the group succeeded.
+If the explorers fail to pass the challenge, the explorer who rolled lowest in the contest roll describes how the group failed. -->
+</div>
+<p>:::</p>
+<div data-fence="1" class="page">
+<h2 id="detailed-gameplay">Detailed Gameplay</h2>
+<ol>
+<li>Each <strong>explorer</strong> determines their character <strong>traits</strong> using the <strong>Explorer Creation Tables</strong> (included below).
+These <strong>traits</strong> guide <strong>explorers</strong> as they narrate the <strong>group</strong>'s <strong>plan</strong> and how they chose to support it.</li>
+<li>Each <strong>round</strong> starts with the <strong>explorers</strong> rolling 1d6 each to determine what <strong>challenge</strong> they will face—this is the <strong>round</strong>'s <strong>Challenge Roll</strong>.
+To determine the <strong>challenge</strong>, the <strong>explorers</strong> each roll 1d6 and the look up the total sum of the rolls mod 12 in the <strong>Challenges Table</strong> (included below).
+If they have already faced this <strong>challenge</strong>, the <strong>group</strong> will face the next <strong>challenge</strong> on the <strong>Challenges Table</strong> that they have not yet faced.</li>
+<li>The <strong>explorer</strong> who rolled highest on the <strong>Challenge Roll</strong> then decides and narrates how the <strong>group</strong> will beat this <strong>challenge</strong> based on their <strong>traits</strong>.
+Each <strong>explorer</strong> can only decide and narrate a <strong>plan</strong> once per <strong>game</strong> while there are still <strong>explorers</strong> who have not had the chance to do so in the <strong>game</strong>.
+If the <strong>explorer</strong> who rolled highest has already done so, the responsibility passes to the <strong>explorer</strong> with the next highest roll who has not narrated a <strong>plan</strong>.
+If all <strong>explorers</strong> have all decided and narrated a <strong>plan</strong> the same number of times, then all may narrate a <strong>plan</strong> again.
+If two or more <strong>explorers</strong> who are able to narrate the <strong>plan</strong> rolled highest, those <strong>explorers</strong> continue rolling 1d6 as tie-breakers until a single <strong>explorer</strong> rolls higher than the others.</li>
+<li>Once a <strong>plan</strong> has been narrated, the other <strong>explorers</strong> have the opportunity to describe how they will use their <strong>explorer</strong>'s <strong>traits</strong> to support the <strong>plan</strong>.</li>
+<li>Each <strong>explorer</strong> then rolls another 1d6 to determine if the <strong>group</strong> beats the <strong>challenge</strong>—this is the <strong>Contest Roll</strong>.
+The total sum of the <strong>group</strong>'s rolls is compared to the <strong>difficulty</strong> of the <strong>challenge</strong>.
+To calculate the <strong>difficulty</strong> of the <strong>challenge</strong>, use the included <strong>Difficulty Tables</strong>.
+First, find the <strong>group</strong>'s <strong>base difficulty</strong> based on the number of <strong>explorers</strong> in the group on the <strong>Base Difficulty Table</strong>.
+Next, find the <strong>challenge</strong>'s <strong>difficulty modifier</strong> from the <strong>Challenges Table</strong>.
+The <strong>difficulty</strong> that the <strong>group</strong> has to beat is the sum of the <strong>base difficulty</strong> and the <strong>difficulty modifier</strong>.
+If the sum of the <strong>group</strong>'s rolls is greater than the <strong>difficulty</strong>, the <strong>group</strong> succeeds!
+Otherwise, the <strong>group</strong> fails.</li>
+<li>If the <strong>group</strong> succeeded at the <strong>challenge</strong>, the <strong>explorer</strong> who rolled highest on the <strong>Contest Roll</strong> narrates how the <strong>group</strong>'s <strong>plan</strong> successfully got them past the <strong>challenge</strong>.
+If the <strong>group</strong> failed at the <strong>challenge</strong>, the <strong>explorer</strong> who rolled lowest on the <strong>Contest Roll</strong> narrates how the <strong>group</strong>'s <strong>plan</strong> failed to get them past the <strong>challenge</strong>.
+This completes one <strong>challenge</strong>.</li>
+<li>This completes one <strong>round</strong>.
+Go back to step 2. and the <strong>game</strong> continues until 3 <strong>rounds</strong> have been played.</li>
+</ol>
+</div>
+<div data-fence="1" class="page">
+<h2 id="difficulty-tables">Difficulty Tables</h2>
+<h3 id="base-difficulty-table">Base Difficulty Table</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Players</th>
+<th style="text-align:center">Base Difficulty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">12</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">16</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">21</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">26</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">30</td>
+</tr>
+</tbody>
+</table>
+<h3 id="challenges-table">Challenges Table</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Roll % 12</th>
+<th style="text-align:center">Challenge</th>
+<th style="text-align:center">Difficulty Modifier</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">0</td>
+<td style="text-align:center">An earthquake splits the ground in two</td>
+<td style="text-align:center">+3</td>
+</tr>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:center">Two giant mosquitos swirl above</td>
+<td style="text-align:center">+2</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:center">A horde of angry monkeys hollers in your way</td>
+<td style="text-align:center">+4</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:center">A fellow traveler needs your aid!</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:center">A lion stalks you as you travel</td>
+<td style="text-align:center">+3</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:center">The legendary hunter John Jose follows your every step</td>
+<td style="text-align:center">-3</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:center">A massive stampede of wildebeests thunders behind you</td>
+<td style="text-align:center">+1</td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:center">A pack of Velociraptors are on your tail</td>
+<td style="text-align:center">+4</td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:center">A strange purple dinosaur stares menacingly before you</td>
+<td style="text-align:center">-2</td>
+</tr>
+<tr>
+<td style="text-align:center">9</td>
+<td style="text-align:center">A hungry pterodactyl circles overhead</td>
+<td style="text-align:center">+2</td>
+</tr>
+<tr>
+<td style="text-align:center">10</td>
+<td style="text-align:center">Carnivorous plants block your path</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">11</td>
+<td style="text-align:center">A terrible blizzard approaches</td>
+<td style="text-align:center">-1</td>
+</tr>
+</tbody>
+</table>
+<p>To determine the <strong>difficulty</strong> of a <strong>challenge</strong>, first find the <strong>group</strong>'s <strong>base difficulty</strong> from the <strong>Base Difficulty Table</strong>.
+Then, add the <strong>difficulty modifier</strong> for that <strong>challenge</strong> on the <strong>Challenges Table</strong> to calculate the <strong>challenge</strong>'s <strong>difficulty</strong>.</p>
+<p>For example, suppose a <strong>group</strong> of 6 <strong>explorers</strong> is going up against <strong>challenge</strong> 4, the lion.
+The <strong>base difficulty</strong> for the <strong>group</strong> is 21 and the <strong>difficulty modifier</strong> is +3.
+Therefore, the <strong>difficulty</strong> of this <strong>challenge</strong> for this <strong>group</strong> is 24—the <strong>group</strong> needs to roll higher than 24 in total on their <strong>Contest Roll</strong> to beat this <strong>challenge</strong>.</p>
+</div>
+<div data-fence="1" class="page">
+<h2 id="explorer-creation-tables">Explorer Creation Tables</h2>
+<div data-fence="2" class="two-column">
+<div data-fence="3" class="column-break-after">
+<p>To create your <strong>explorer</strong>, roll 2d6 on each of the <strong>Backgrounds Table</strong>, <strong>Personalities Table</strong>, and <strong>Mannerisms Table</strong> for the associated <strong>traits</strong>.
+The first d6 result determines which of the outer 6 categories of <strong>traits</strong> and the second d6 result determines which <strong>trait</strong> within the category your <strong>explorer</strong> has.</p>
+<p>For example, suppose you rolled a 4 and a 3 on the <strong>Backgrounds Table</strong>, a 1 and a 2 on the <strong>Personalities Table</strong>, and two 6's on the <strong>Mannerisms Table</strong>.
+Your <strong>explorer</strong> would be a <em>brave</em> <em>professor</em> who speaks in <em>whispers</em>!</p>
+</div>
+<h3 id="backgrounds-table">Backgrounds Table</h3>
+<ol>
+<li>
+<ol>
+<li>Geographer</li>
+<li>Cartographer</li>
+<li>Martial artist</li>
+<li>Contortionist</li>
+<li>Software engineer</li>
+<li>Ph.D. student</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Helicopter pilot</li>
+<li>Younger daughter</li>
+<li>Biologist</li>
+<li>Street performer</li>
+<li>Reporter</li>
+<li>Navigator</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Zoologist</li>
+<li>Thief</li>
+<li>Elder brother</li>
+<li>Gambler</li>
+<li>Engineer</li>
+<li>Game designer</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Father</li>
+<li>Museum curator</li>
+<li>Professor</li>
+<li>Smuggler</li>
+<li>Race car driver</li>
+<li>Gem miner</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Explorer</li>
+<li>Evil goon</li>
+<li>Tattooist</li>
+<li>Pit-fighter</li>
+<li>Author</li>
+<li>Geologist</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Sailor</li>
+<li>Farmer</li>
+<li>Mercenary</li>
+<li>Street merchant</li>
+<li>Grandmother</li>
+<li>Soldier</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div data-fence="1" class="page">
+<h2 id="explorer-creation-tables-cont">Explorer Creation Tables (cont.)</h2>
+<div data-fence="2" class="two-column">
+<h3 id="personalities-table">Personalities Table</h3>
+<ol>
+<li>
+<ol>
+<li>Bitter</li>
+<li>Brave</li>
+<li>Cautious</li>
+<li>Chipper</li>
+<li>Contrary</li>
+<li>Cowardly</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Cunning</li>
+<li>Driven</li>
+<li>Entitled</li>
+<li>Gregarious</li>
+<li>Grumpy</li>
+<li>Heartless</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Honor-bound</li>
+<li>Hotheaded</li>
+<li>Inquisitive</li>
+<li>Irascible</li>
+<li>Jolly</li>
+<li>Know-it-all</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Lazy</li>
+<li>Loyal</li>
+<li>Menacing</li>
+<li>Mopey</li>
+<li>Nervous</li>
+<li>Protective</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Righteous</li>
+<li>Rude</li>
+<li>Sarcastic</li>
+<li>Savage</li>
+<li>Scheming</li>
+<li>Serene</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Spacey</li>
+<li>Stoic</li>
+<li>Stubborn</li>
+<li>Stuck-up</li>
+<li>Suspicious</li>
+<li>Wisecracking</li>
+</ol>
+</li>
+</ol>
+<h3 id="mannerisms-table">Mannerisms Table</h3>
+<ol>
+<li>
+<ol>
+<li>Anecdotes</li>
+<li>Breathy</li>
+<li>Chuckles</li>
+<li>Clipped</li>
+<li>Cryptic</li>
+<li>Deep voice</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Drawl</li>
+<li>Enunciates</li>
+<li>Flowery speech</li>
+<li>Gravelly voice</li>
+<li>Highly formal</li>
+<li>Hypnotic</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Interrupts</li>
+<li>Laconic</li>
+<li>Laughs</li>
+<li>Long pauses</li>
+<li>Melodious</li>
+<li>Monotone</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Mumbles</li>
+<li>Narrates</li>
+<li>Overly casual</li>
+<li>Quaint sayings</li>
+<li>Rambles</li>
+<li>Random facts</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Rapid-fire</li>
+<li>Rhyming</li>
+<li>Robotic</li>
+<li>Slow speech</li>
+<li>Speechifies</li>
+<li>Squeaky</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>Street slang</li>
+<li>Stutters</li>
+<li>Talks to self</li>
+<li>Trails off</li>
+<li>Very loud</li>
+<li>Whispers</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div data-fence="1" class="page">
+<h2 id="credits">Credits</h2>
+<div data-fence="2" class="sidenote">
+<p><strong>Escape the Jungle</strong>, a simple RPG by Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky written in Ian Horswill's COMP_SCI 396 AI and Experimental Narrative.</p>
+</div>
+<h4 id="game-concept-by">Game Concept By</h4>
+<p>Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky</p>
+<h4 id="rules-formulated-by">Rules Formulated By</h4>
+<p>Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky</p>
+<h4 id="playtested-by">Playtested By</h4>
+<p>Elli Beres, Aryaman Chawla, Sam Hill, Jay Park, Krishna Sorna, and Inessa Verbitsky</p>
+<!-- #### Final Rules Written By
+
+Elli Beres -->
+<h4 id="final-formatting-by">Final Formatting By</h4>
+<p>Elli Beres</p>
+<h4 id="game-created-for">Game Created For</h4>
+<p>Dr. Ian Horswill's Spring 2024 COMP_SCI 396: AI and Experimental Narrative at Northwestern University</p>
+</div>
+ 
+    </body>
+</html>
+  

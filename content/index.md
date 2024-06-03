@@ -11,8 +11,9 @@ template: page
 
 # Game Ideas
 
-- ### Game Poems
-    - [The Curse of Capitalism](/curse-of-capitalism/)
+- ### COMP_SCI 396 AI and Experimental Narrative with Dr. Ian Horswill @ Northwestern University
+    - [The Curse of Capitalism](/aien/curse-of-capitalism/)
+    - [Escape the Jungle](/aien/jumanji/)
 
 :::
 

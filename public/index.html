@@ -36,7 +36,7 @@
     </head>
 
     <script>
-        function addBackLink() {
+        var addBackLink = function () {
             let pages = document.getElementsByClassName("page");
             for (const page of pages) {
                 let backLink = document.createElement("a");
@@ -45,19 +45,47 @@
                 backLink.setAttribute("class", "backlink");
                 page.prepend(backLink);
             }
-        }
+        };
+
+        var switchColor = function (newColor) {
+            let colorSwitcher = document.getElementById("colorSwitcher");
+
+            let newColorCSSVar = "";
+
+            switch (newColor) {
+                case "red":
+                case "blue":
+                case "green":
+                case "purple":
+                    newColorCSSVar = `var(--title-${newColor})`;
+                    break;
+                default:
+                    newColorCSSVar = `${newColor}`;
+                    break;
+            }
+
+            if (newColorCSSVar != "") {
+                colorSwitcher.innerHTML = `
+                :root {
+                    --title-color: ${newColorCSSVar};
+                }`;
+            }
+        };
     </script>
 
-    <body onload="addBackLink()">
+    <style id="colorSwitcher"></style>
+
+    <body onload="addBackLink();">
          <div data-fence="0" class="page">
 <h1 id="ellis-workshop">Elli's Workshop</h1>
 <div data-fence="1" class="toc">
 <h1 id="game-ideas">Game Ideas</h1>
 <ul>
 <li>
-<h3 id="game-poems">Game Poems</h3>
+<h3 id="comp-sci-396-ai-and-experimental-narrative-with-dr-ian-horswill--northwestern-university">COMP_SCI 396 AI and Experimental Narrative with Dr. Ian Horswill @ Northwestern University</h3>
 <ul>
-<li><a href="/curse-of-capitalism/">The Curse of Capitalism</a></li>
+<li><a href="/aien/curse-of-capitalism/">The Curse of Capitalism</a></li>
+<li><a href="/aien/jumanji/">Escape the Jungle</a></li>
 </ul>
 </li>
 </ul>
