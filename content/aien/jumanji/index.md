@@ -24,10 +24,10 @@ Beat them, and you will successfully **escape the jungle**!
 ## Materials
 
 **Escape the Jungle** is a game for 4-8 players.
-Each player will need one six-sided dice (1d6).
+Each player will need one six-sided die (1d6).
 The players will collectively need one copy of the **Difficulty Tables** and the **Explorer Creation Tables**—both are included later.
 
-## Gameplay
+## Gameplay Overview
 
 **Escape the Jungle** is played by a **group** of 4–8 **explorers**.
 Each **game** consists of 3 **rounds**, each of which consists of a single **challenge**.
